@@ -39,7 +39,10 @@ function App() {
       <ul>
         {
           todos.map(todo => (
-            <li key={todo.id}>{todo.title}</li>
+            <li key={todo.id} className='todo-item'>
+              <input type='checkbox' />
+              {todo.title}
+            </li>
           ))
         }
       </ul>
